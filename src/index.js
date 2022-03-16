@@ -8,6 +8,7 @@ import {
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/bootstrap.min.css';
 
 const rootElement = document.getElementById("root"); // root element is in the index.html 
 
