@@ -12,12 +12,13 @@ body {
 }
 
 nav {
-  /* position: absolute; */
+  position: absolute;
+  width: 100%;
   display: flex;
   justify-content:space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: transparent;
+  background-color: rgba(252, 252, 252, 0.603);
   border: none;
   font-size: 3vh;
 }
@@ -27,12 +28,15 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  width: 15%;
   color: green;
 }
 
 .nav-link:hover {
   color: black;
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+
 }
 
 link {
