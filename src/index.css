@@ -46,3 +46,13 @@ link {
   justify-content:space-around;
   align-items: center;
 }
+
+.card {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* .cardWrapper {
+  display: flex;
+  justify-content: column;
+} */
