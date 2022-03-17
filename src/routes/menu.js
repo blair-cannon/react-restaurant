@@ -18,23 +18,43 @@ export default function Menu() {
   return (
     <div className="App"> 
         <h1>Menu</h1> 
+        <h2>Mexican Plates</h2>
+       {menu.filter((tacoItem) => tacoItem.cuisine.label === 'Mexican').map((tacoItem) => <TacoItem key={tacoItem.id} tacoItem={tacoItem} />)}
+       <h2>Sandwiches</h2>
+       {menu.filter((sandwichItem) => sandwichItem.category.title === 'Sandwiches').map((sandwichItem) => <SandwichItem key={sandwichItem.id} sandwichItem={sandwichItem} />)}
+       <h2>Desserts</h2>
+       {menu.filter((dessertItem) => dessertItem.category.title === 'Dessert').map((dessertItem) => <DessertItem key={dessertItem.id} dessertItem={dessertItem} />)}
 
-        {/* {menus.filter((menu) => menu.cuisine.label === 'Mexican')}  */}
-       {menu.map((menuItem) => <MenuItem key={menuItem.id} menuItem={menuItem} />)}
     </div>
   );
 }
 
-const MenuItem = ({ menuItem }) => {
+const TacoItem = ({ tacoItem }) => {
   return (
     <div>
-      <h2>{menuItem.title}</h2>
-      {/* <div>Colors: {house.houseColours}</div>
-      <div>Founder: {house.founder}</div>
-      <div>Animal: {house.animal}</div>
-      <div>Element: {house.element}</div>
-      <div>Ghost: {house.ghost}</div>
-      <div>Common Room: {house.commonRoom}</div> */}
+      <p>{tacoItem.title}</p>
+      <div>{tacoItem.price}</div>
+      <div>{tacoItem.description}</div>
+    </div>
+  )
+}
+
+const SandwichItem = ({ sandwichItem }) => {
+  return (
+    <div>
+      <p>{sandwichItem.title}</p>
+      <div>{sandwichItem.price}</div>
+      <div>{sandwichItem.description}</div>
+    </div>
+  )
+}
+
+const DessertItem = ({ dessertItem }) => {
+  return (
+    <div>
+      <p>{dessertItem.title}</p>
+      <div>{dessertItem.price}</div>
+      <div>{dessertItem.description}</div>
     </div>
   )
 }
