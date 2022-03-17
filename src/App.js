@@ -1,32 +1,22 @@
 import React from 'react';
-import './App.css';
-import About from './routes/about';
-import Contact from './routes/contact';
-import Home from './routes/home';
-import Menu from './routes/menu';
-import Nav from './routes/nav';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Switch
-} from "react-router-dom";
-
+import { Link, Outlet } from 'react-router-dom';
 
 function App() {
+
+  const navStyle = {
+    color: "white"
+  }
   return (
-    <BrowserRouter>
-        <div className="App">
-          <Routes>
-          <Nav />
-          <Route path="Home" element={<Home />} />
-          <Route path="Menu" element={<Menu />} />
-          <Route path="About" element={<About />} />
-          <Route path="Contact" element={<Contact />} />
-          </Routes>
-        </div>
-    </BrowserRouter>
+    <div className="App">
+    <nav>
+        <h3>Logo</h3>
+      <Link style={navStyle} to="/">HOME</Link> 
+      <Link style={navStyle} to="/menu">MENU</Link> 
+      <Link style={navStyle} to="/about">ABOUT</Link> 
+      <Link style={navStyle} to="/contact">CONTACT</Link> 
+  </nav>
+  <Outlet />
+  </div>
   );
 }
-
 export default App;
