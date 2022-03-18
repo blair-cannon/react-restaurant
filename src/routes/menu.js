@@ -1,6 +1,7 @@
 import '../App.css';
 import { getData } from '../data.js'; 
 import React, { useEffect, useState } from 'react';
+import menuPic from '../wireframes/menu.jpg';
 
 
 export default function Menu() {
@@ -16,16 +17,20 @@ export default function Menu() {
 }, []);
 
   return (
-    <div className="App"> 
-        <h1>Menu</h1> 
+    <div className="App" style={{ backgroundImage:`url(${menuPic})` }}> 
+    <div className="space"></div>
+      <h2>MEXICAN PLATES</h2>
         <div className="cardWrapper">
-          <h2>Mexican Plates</h2>
-            {menu.filter((tacoItem) => tacoItem.cuisine.label === 'Mexican').map((tacoItem) => <TacoItem key={tacoItem.id} tacoItem={tacoItem} />)}
-          <h2>Sandwiches</h2>
-            {menu.filter((sandwichItem) => sandwichItem.category.title === 'Sandwiches').map((sandwichItem) => <SandwichItem key={sandwichItem.id} sandwichItem={sandwichItem} />)}
-          <h2>Desserts</h2>
-            {menu.filter((dessertItem) => dessertItem.category.title === 'Dessert').map((dessertItem) => <DessertItem key={dessertItem.id} dessertItem={dessertItem} />)}
-       </div>
+          {menu.filter((tacoItem) => tacoItem.cuisine.label === 'Mexican').map((tacoItem) => <TacoItem key={tacoItem.id} tacoItem={tacoItem} />)}
+        </div>
+      <h2>SANDWICHES</h2>
+        <div className="cardWrapper">
+          {menu.filter((sandwichItem) => sandwichItem.category.title === 'Sandwiches').map((sandwichItem) => <SandwichItem key={sandwichItem.id} sandwichItem={sandwichItem} />)}
+        </div>
+      <h2>DESSERTS</h2>
+        <div className="cardWrapper">
+          {menu.filter((dessertItem) => dessertItem.category.title === 'Dessert').map((dessertItem) => <DessertItem key={dessertItem.id} dessertItem={dessertItem} />)}
+        </div>
     </div>
   );
 }

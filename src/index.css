@@ -4,6 +4,10 @@ body {
 
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: repeat;
 }
 
 .App-logo {
@@ -12,7 +16,7 @@ body {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content:space-around;
@@ -44,19 +48,34 @@ link {
 }
 
 .Home {
-  height: 100vh;
-  width: 100vw;
   display: flex;
-  justify-content:space-around;
+  justify-content:space-between;
   align-items: center;
+  position: absolute;
+  top: 15rem;
+  left: 20rem;
+
 }
 
 .card {
-  width: 10rem;
+  width: 20rem;
   height: 10rem;
+  padding: 2rem;
+  color: #624a3c;
+  font-size: 1.2rem;
 }
 
-/* .cardWrapper {
+.cardWrapper {
   display: flex;
-  justify-content: column;
-} */
+  justify-content: center;
+  margin: 1rem;
+  flex-wrap: wrap;
+}
+
+h2 {
+  color: green;
+}
+
+.space {
+  height: 6rem;
+}
