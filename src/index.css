@@ -78,11 +78,8 @@ h2 {
   height: 6rem;
 }
 
-.image {
-  /* width: 75%; */
-  height: max-content;
-  margin-left: auto;
-  margin-right: auto;
+.aboutBox {
+  align-items: center;
 }
 
 .aboutWrapper {
@@ -140,27 +137,10 @@ footer {
   margin-bottom: 0px;
 }
 
-.ceopic {
+.ceoPic {
   width:15rem;
   height:10rem;
-}
 
-@media only screen and (max-width: 700px) {
-  .homeHeader {
-    font-size: 4rem;
-  }
-}
-
-.slogan {
-  color:#3d2e25;
-  font-size:3em;
-  margin-top:0;
-}
-
-@media only screen and (max-width: 700px) {
-  .slogan {
-    font-size: 2rem;
-  }
 }
 
 .homeButton {
@@ -173,26 +153,75 @@ footer {
   font-size:2rem;
 }
 
+.contactHeader {
+  color:green;
+  font-size:3em;
+   font-weight:bold; 
+   margin-bottom:0
+}
+
+.contactList {
+  color:#624a3c;
+  font-size:2em;
+  margin-top:0
+}
+
+.phoneNumberButton {
+  color:green;
+  background-color:transparent;
+  border-radius:25px;
+  border:solid 2px green;
+  height:2rem;
+  width:10rem; 
+  font-size:1rem; 
+  margin-top:3rem;
+}
+
+
 @media only screen and (max-width: 700px) {
+  .homeHeader {
+    font-size: 4rem;
+  }
+
+  .slogan {
+    font-size: 1.5rem;
+  }
+
   .homeButton {
     font-size: 1rem;
     height:2rem;
     width:4rem;
   }
-}
 
-@media only screen and (max-width: 700px) {
   .taco {
     width: 8rem;
     height: 4rem;
     padding-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 4rem;
   }
-}
 
-@media only screen and (max-width: 700px) {
+  .slogan {
+    color:#3d2e25;
+    font-size:3em;
+    margin-top:0;
+  }
+
   .aboutQuote {
     font-size: 0.5rem;
   }
+
+  .contactHeader {
+    font-size: 2rem;
+  }
+
+  .contactList {
+    font-size: 1rem;
+  }
+
+  .phoneNumberButton {
+    height:1.5rem;
+    width:8rem; 
+    font-size:1rem;
+  }
 }
+
