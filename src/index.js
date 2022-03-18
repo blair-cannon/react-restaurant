@@ -27,6 +27,7 @@ render(
       </Route> 
       {/* route tag around app is not self-closing and wraps around all nav items bc we want it on all pages */}
     </Routes>
+    <footer> @2022 Lukarita</footer>
   </BrowserRouter>,
   rootElement
 );
