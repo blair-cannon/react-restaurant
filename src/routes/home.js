@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import background from '../wireframes/background.png';
 import openpic from '../wireframes/taco.png';
 import { Link } from 'react-router-dom';

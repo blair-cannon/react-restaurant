@@ -1,4 +1,3 @@
-import '../App.css';
 import { getData } from '../data.js'; 
 import React, { useEffect, useState } from 'react';
 import menuPic from '../wireframes/menu.jpg';
@@ -11,7 +10,6 @@ export default function Menu() {
   useEffect(() => {
     getData(URL)
     .then((data) => {
-      // console.log(data)
       setMenu(data)
     })
 }, []);
@@ -38,7 +36,7 @@ export default function Menu() {
 const TacoItem = ({ tacoItem }) => {
   return (
     <div className="card">
-      <p style={{ fontWeight:"bold" }}>{tacoItem.title}</p>
+      <p className="boldText">{tacoItem.title}</p>
       <div>{tacoItem.price}</div>
       <div>{tacoItem.description}</div>
     </div>
@@ -48,7 +46,7 @@ const TacoItem = ({ tacoItem }) => {
 const SandwichItem = ({ sandwichItem }) => {
   return (
     <div className="card">
-      <p style={{ fontWeight:"bold" }}>{sandwichItem.title}</p>
+      <p className="boldText">{sandwichItem.title}</p>
       <div>{sandwichItem.price}</div>
       <div>{sandwichItem.description}</div>
     </div>
@@ -58,7 +56,7 @@ const SandwichItem = ({ sandwichItem }) => {
 const DessertItem = ({ dessertItem }) => {
   return (
     <div className="card">
-      <p style={{ fontWeight:"bold" }}>{dessertItem.title}</p>
+      <p className="boldText">{dessertItem.title}</p>
       <div>{dessertItem.price}</div>
       <div>{dessertItem.description}</div>
     </div>

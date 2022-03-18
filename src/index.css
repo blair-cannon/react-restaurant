@@ -177,6 +177,18 @@ footer {
   margin-top:3rem;
 }
 
+.greenLink {
+  text-decoration:none;
+  color:green;
+}
+
+.aboutHeader {
+  color: #624a3c;
+}
+
+.boldText {
+  font-weight: bold;
+}
 
 @media only screen and (max-width: 700px) {
   .homeHeader {

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import contactBackground from '../wireframes/contactBackground.jpg';
 import { Link } from 'react-router-dom';
 
@@ -18,7 +17,7 @@ function Contact() {
           <a className="contactList" href="mailto:Lukarita@restaurant.com">Lukarita@restaurant.com</a>  
           <br></br>
         <button className="phoneNumberButton">
-          <Link style={{ textDecoration:"none", color:"green" }} to="#">(895) 690-4916</Link> 
+          <Link className="greenLink" to="#">(895) 690-4916</Link> 
         </button>
     </div>
 </div>
