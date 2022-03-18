@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className="App">
-        <div className="Home" style={{ backgroundImage:`url(${background})`, backgroundSize: 'cover' }}>
+    <div className="App" style={{  backgroundImage:`url(${background})`}}>
+        <div className="Home" >
             <div className="home-left">
               <h1 style={{ color:"green", fontSize:"7em", fontWeight:"bold", marginBottom:"0" }}>Restaurant</h1> 
               <p style={{ color:"#624a3c", fontSize:"3em", marginTop:"0" }}>type of food/ slogan text</p>

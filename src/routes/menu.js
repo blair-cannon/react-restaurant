@@ -1,6 +1,7 @@
 import '../App.css';
 import { getData } from '../data.js'; 
 import React, { useEffect, useState } from 'react';
+import menuPic from '../wireframes/menu.jpg';
 
 
 export default function Menu() {
@@ -16,25 +17,50 @@ export default function Menu() {
 }, []);
 
   return (
-    <div className="App"> 
-        <h1>Menu</h1> 
-
-        {/* {menus.filter((menu) => menu.cuisine.label === 'Mexican')}  */}
-       {menu.map((menuItem) => <MenuItem key={menuItem.id} menuItem={menuItem} />)}
+    <div className="App" style={{ backgroundImage:`url(${menuPic})` }}> 
+    <div className="space"></div>
+      <h2>MEXICAN PLATES</h2>
+        <div className="cardWrapper">
+          {menu.filter((tacoItem) => tacoItem.cuisine.label === 'Mexican').map((tacoItem) => <TacoItem key={tacoItem.id} tacoItem={tacoItem} />)}
+        </div>
+      <h2>SANDWICHES</h2>
+        <div className="cardWrapper">
+          {menu.filter((sandwichItem) => sandwichItem.category.title === 'Sandwiches').map((sandwichItem) => <SandwichItem key={sandwichItem.id} sandwichItem={sandwichItem} />)}
+        </div>
+      <h2>DESSERTS</h2>
+        <div className="cardWrapper">
+          {menu.filter((dessertItem) => dessertItem.category.title === 'Dessert').map((dessertItem) => <DessertItem key={dessertItem.id} dessertItem={dessertItem} />)}
+        </div>
     </div>
   );
 }
 
-const MenuItem = ({ menuItem }) => {
+const TacoItem = ({ tacoItem }) => {
   return (
-    <div>
-      <h2>{menuItem.title}</h2>
-      {/* <div>Colors: {house.houseColours}</div>
-      <div>Founder: {house.founder}</div>
-      <div>Animal: {house.animal}</div>
-      <div>Element: {house.element}</div>
-      <div>Ghost: {house.ghost}</div>
-      <div>Common Room: {house.commonRoom}</div> */}
+    <div className="card">
+      <p style={{ fontWeight:"bold" }}>{tacoItem.title}</p>
+      <div>{tacoItem.price}</div>
+      <div>{tacoItem.description}</div>
+    </div>
+  )
+}
+
+const SandwichItem = ({ sandwichItem }) => {
+  return (
+    <div className="card">
+      <p style={{ fontWeight:"bold" }}>{sandwichItem.title}</p>
+      <div>{sandwichItem.price}</div>
+      <div>{sandwichItem.description}</div>
+    </div>
+  )
+}
+
+const DessertItem = ({ dessertItem }) => {
+  return (
+    <div className="card">
+      <p style={{ fontWeight:"bold" }}>{dessertItem.title}</p>
+      <div>{dessertItem.price}</div>
+      <div>{dessertItem.description}</div>
     </div>
   )
 }
