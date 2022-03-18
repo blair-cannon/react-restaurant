@@ -120,3 +120,13 @@ h2 {
 li {
   list-style: none;
 }
+
+footer {
+  height: 1rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #3d2e25;
+  color: white;
+  text-align: center;
+}
