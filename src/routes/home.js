@@ -10,7 +10,7 @@ function Home() {
         <div className="Home" >
             <div className="home-left">
               <h1 style={{ color:"green", fontSize:"7em", fontWeight:"bold", marginBottom:"0" }}>Restaurant</h1> 
-              <p style={{ color:"#624a3c", fontSize:"3em", marginTop:"0" }}>type of food/ slogan text</p>
+              <p style={{ color:"#3d2e25", fontSize:"3em", marginTop:"0" }}>type of food/ slogan text</p>
             <button style={{ color:"green", backgroundColor:"transparent", borderRadius:"25px", border:"solid 2px green", height:"4rem", width:"8rem", fontSize:"2rem" }}>
               <Link style={{ textDecoration:"none", color:"green" }} to="/menu">Menu</Link> 
             </button>
