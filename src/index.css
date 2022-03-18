@@ -4,7 +4,6 @@ body {
 
 .App {
   text-align: center;
-  height: 100vh;
   width: 100vw;
   background-size: cover;
   background-repeat: repeat;
@@ -24,7 +23,7 @@ nav {
   min-height: 10vh;
   background-color: rgba(252, 252, 252, 0.603);
   border: none;
-  font-size: 3vh;
+  font-size: 1rem;
 }
 
 .nav-link {
@@ -49,11 +48,9 @@ link {
 
 .Home {
   display: flex;
-  justify-content:space-between;
+  justify-content:center;
   align-items: center;
-  position: absolute;
-  top: 15rem;
-  left: 20rem;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -82,7 +79,7 @@ h2 {
 }
 
 .image {
-  width: 75%;
+  /* width: 75%; */
   height: max-content;
   margin-left: auto;
   margin-right: auto;
@@ -98,7 +95,9 @@ h2 {
   padding-right: 4rem;
   padding-top: 0.5rem;
   margin-top: 1rem;
+  padding-bottom: 1rem;
   color: #3d2e25;
+  font-size: 1rem;
   
 }
 
@@ -124,9 +123,76 @@ li {
 footer {
   height: 1rem;
   width: 100%;
-  position: absolute;
   bottom: 0;
   background-color: #3d2e25;
   color: white;
   text-align: center;
+}
+
+.spacer {
+  height: 15rem;
+}
+
+.homeHeader {
+  color: green;
+  font-size: 7em;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.ceopic {
+  width:15rem;
+  height:10rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .homeHeader {
+    font-size: 4rem;
+  }
+}
+
+.slogan {
+  color:#3d2e25;
+  font-size:3em;
+  margin-top:0;
+}
+
+@media only screen and (max-width: 700px) {
+  .slogan {
+    font-size: 2rem;
+  }
+}
+
+.homeButton {
+  color:green;
+  background-color:transparent;
+  border-radius:25px; 
+  border:solid 2px green;
+  height:4rem;
+  width:8rem;
+  font-size:2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .homeButton {
+    font-size: 1rem;
+    height:2rem;
+    width:4rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .taco {
+    width: 8rem;
+    height: 4rem;
+    padding-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .aboutQuote {
+    font-size: 0.5rem;
+  }
 }
