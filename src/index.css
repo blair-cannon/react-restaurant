@@ -37,9 +37,9 @@ nav {
 }
 
 .nav-link:hover {
-  color: black;
-  border-left: solid 2px black;
-  border-right: solid 2px black;
+  color: #3d2e25;
+  border-left: solid 2px #3d2e25;
+  border-right: solid 2px #3d2e25;
 
 }
 
@@ -60,7 +60,7 @@ link {
   width: 20rem;
   height: 10rem;
   padding: 2rem;
-  color: #624a3c;
+  color: #3d2e25;
   font-size: 1.3rem;
   margin: 1rem;
 }
@@ -79,4 +79,44 @@ h2 {
 
 .space {
   height: 6rem;
+}
+
+.image {
+  width: 75%;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutWrapper {
+  background-color: rgba(247, 192, 192, 0.89);
+  width: 50%;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 0.5rem;
+  margin-top: 1rem;
+  color: #3d2e25;
+  
+}
+
+.Contact {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.664);
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  margin-top: 4rem;
+
+}
+
+.home-right {
+  margin-left: 3rem;
+}
+
+li {
+  list-style: none;
 }
