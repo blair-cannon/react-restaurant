@@ -1,12 +1,11 @@
 import React from 'react';
 import '../App.css';
 import contactBackground from '../wireframes/contactBackground.jpg';
-import contactpic from '../wireframes/taco.png';
 import { Link } from 'react-router-dom';
 
 function Contact() {
   return (
-    <div className="App" style={{  backgroundImage:`url(${contactBackground})`}}>
+    <div className="App" style={{  backgroundImage:`url(${contactBackground})`, height:"100vh" }}>
       <div className="space"></div>
     <div className="Contact" >
           <h1 style={{ color:"green", fontSize:"3em", fontWeight:"bold", marginBottom:"0" }}>Contact Us!</h1> 
