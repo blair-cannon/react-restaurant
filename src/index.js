@@ -1,7 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import {HashRouter as
-  BrowserRouter,
+import {HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -17,7 +16,7 @@ import Contact from './routes/contact';
 const rootElement = document.getElementById("root"); 
 
 render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="/" element={<Home />} />
@@ -28,7 +27,7 @@ render(
       {/* route tag around app is not self-closing and wraps around all nav items bc we want it on all pages */}
     </Routes>
     <footer> @2022 Lukarita</footer>
-  </BrowserRouter>,
+  </HashRouter>,
   rootElement
 );
 

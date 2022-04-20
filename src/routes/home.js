@@ -1,7 +1,7 @@
 import React from 'react';
 import background from '../wireframes/background.png';
 import openpic from '../wireframes/taco.png';
-import {HashRouter as Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function Home() {
   return (
