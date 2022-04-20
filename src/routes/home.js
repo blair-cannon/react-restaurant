@@ -9,7 +9,7 @@ function Home() {
       <div className="spacer"></div>
         <div className="Home" >
             <div className="home-left">
-              <h1 className="homeHeader" >Lukarita</h1> 
+              <h1 className="homeHeader" >LukaRita</h1> 
               <p className="slogan" >OPEN FOR DINE-IN & CARRYOUT</p>
             <button className="homeButton" >
               <Link style={{ textDecoration:"none", color:"green" }} to="/menu">Menu</Link> 

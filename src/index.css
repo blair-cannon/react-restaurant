@@ -9,9 +9,9 @@ body {
   background-repeat: repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  height: 15vmin;
+  border-radius: 50%;
 }
 
 nav {
@@ -75,7 +75,7 @@ h2 {
 }
 
 .space {
-  height: 6rem;
+  height: 10rem;
 }
 
 .aboutBox {
@@ -197,6 +197,7 @@ footer {
 
   .slogan {
     font-size: 1.5rem;
+    color:#624a3c;
   }
 
   .homeButton {
@@ -213,8 +214,8 @@ footer {
   }
 
   .slogan {
-    color:#3d2e25;
-    font-size:3em;
+    color:red;
+    font-size:5rem;
     margin-top:0;
   }
 
