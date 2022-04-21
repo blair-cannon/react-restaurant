@@ -23,7 +23,7 @@ nav {
   min-height: 10vh;
   background-color: rgba(252, 252, 252, 0.603);
   border: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .nav-link {
@@ -33,6 +33,7 @@ nav {
   align-items: center;
   width: 15%;
   color: green;
+  margin-right: 1.2rem;
 }
 
 .nav-link:hover {
@@ -119,6 +120,7 @@ li {
 
 footer {
   height: 1rem;
+  position: fixed;
   width: 100%;
   bottom: 0;
   background-color: #3d2e25;
@@ -190,14 +192,21 @@ footer {
   font-weight: bold;
 }
 
+.slogan {
+  font-size: 1.5rem;
+  color:#624a3c;
+}
+
+.taco {
+  width: 18rem;
+  height: 12rem;
+  padding-top: 1.2rem;
+  margin-right: 4rem;
+}
+
 @media only screen and (max-width: 700px) {
   .homeHeader {
     font-size: 4rem;
-  }
-
-  .slogan {
-    font-size: 1.5rem;
-    color:#624a3c;
   }
 
   .homeButton {
@@ -214,8 +223,8 @@ footer {
   }
 
   .slogan {
-    color:red;
-    font-size:5rem;
+    font-size: 1rem;
+    color:#624a3c;
     margin-top:0;
   }
 
@@ -235,6 +244,10 @@ footer {
     height:1.5rem;
     width:8rem; 
     font-size:1rem;
+  }
+
+  nav {
+    font-size: 1rem;
   }
 }
 
