@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-restaurant/static/css/main.3af8a4e4.css",
+    "main.js": "/react-restaurant/static/js/main.cbb6697a.js",
+    "static/media/contactBackground.jpg": "/react-restaurant/static/media/contactBackground.bdb786fe09bac32c48a8.jpg",
+    "static/media/aboutphoto.jpg": "/react-restaurant/static/media/aboutphoto.9d53469a2f5bb6afd627.jpg",
+    "static/media/menu.jpg": "/react-restaurant/static/media/menu.23b1a5f1c0d211620d76.jpg",
+    "static/media/aboutbackground.jpg": "/react-restaurant/static/media/aboutbackground.271bc415cb7f4d5f7074.jpg",
+    "static/media/background.png": "/react-restaurant/static/media/background.999aeeafe7c6facc57c8.png",
+    "static/media/taco.png": "/react-restaurant/static/media/taco.d2852344c0da4b12a700.png",
+    "static/media/LukaRita.png": "/react-restaurant/static/media/LukaRita.7c69a8e7232cc85ce501.png",
+    "index.html": "/react-restaurant/index.html",
+    "main.3af8a4e4.css.map": "/react-restaurant/static/css/main.3af8a4e4.css.map",
+    "main.cbb6697a.js.map": "/react-restaurant/static/js/main.cbb6697a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3af8a4e4.css",
+    "static/js/main.cbb6697a.js"
+  ]
+}
